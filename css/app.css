@@ -1,0 +1,60 @@
+
+.mobile-action-sheet {
+  background: #1779ba;
+  overflow: visible;
+  width: 94%;
+  left: 3%;
+  height: auto;
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+  color: #fefefe;
+  padding-top: 1rem;
+    position: fixed; 
+    bottom: 0;
+}
+
+.mobile-action-sheet label {
+  color: #fefefe;
+}
+
+.mobile-action-sheet .close-button {
+  top: 0;
+  font-size: 26px;
+  color: #0c3e5f;
+  display: none;
+}
+
+.mobile-action-sheet.is-open .close-button {
+  display: block;
+}
+
+.mobile-action-sheet .mobile-action-sheet-inner {
+  position: relative;
+  padding: 0 1rem 0.5rem;
+}
+
+.mobile-action-sheet .action-sheet-toggle {
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  -webkit-transform: translate3D(-50%, -100%, 0);
+      -ms-transform: translate3D(-50%, -100%, 0);
+          transform: translate3D(-50%, -100%, 0);
+  visibility: visible;
+}
+
+.mobile-action-sheet.position-bottom.is-transition-push::after {
+  box-shadow: none;
+}
+
+.mobile-action-sheet .button.white {
+  border: 1px solid #fefefe;
+  color: #fefefe;
+}
+
+.mobile-action-sheet .button.white:hover, .mobile-action-sheet .button.white:active {
+  border: 1px solid #fefefe;
+  color: #fefefe;
+}
+
