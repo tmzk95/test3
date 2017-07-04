@@ -1,6 +1,9 @@
-
+body{
+    background-color: #eee;
+    color: #5ba;
+}
 .mobile-action-sheet {
-  background: #1779ba;
+  background: #5ba;
   overflow: visible;
   width: 94%;
   left: 3%;
@@ -21,7 +24,7 @@
 .mobile-action-sheet .close-button {
   top: 0;
   font-size: 26px;
-  color: #0c3e5f;
+  color: #5ba;
   display: none;
 }
 
@@ -71,7 +74,7 @@
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  background: #1779ba;
+  background: #5ba;
 }
 
 .mobile-app-icon-bar button {
@@ -89,90 +92,101 @@
 }
 
 
-.app-feature-section {
-  background-color: #e6e6e6;
+
+
+
+
+.card-product-hover-title {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.card-product-hover {
+  position: relative;
+  line-height: 1.2rem;
+  transition: all 0.35s ease;
+}
+
+
+.card-product-hover-details {
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   padding: 1rem;
 }
 
-@media print, screen and (min-width: 40em) {
-  .app-feature-section {
-    padding: 2rem;
-  }
-}
-
-.app-feature-section-main-header {
-  font-weight: 700;
-}
-
-@media screen and (max-width: 63.9375em) {
-  .app-feature-section-main-header {
-    font-size: 30px;
-  }
-}
-
-.app-feature-section-sub-header {
-  font-weight: 300;
+.card-product-hover-details > :last-child {
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 63.9375em) {
-  .app-feature-section-sub-header {
-    font-size: 24px;
-  }
+.card-product-hover-price {
+  margin: 0.5rem 0;
+  font-weight: 700;
+  color: #5ba;
+  font-size: 1.6rem;
 }
 
-.app-feature-section-features {
+.card-product-hover-icons {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-.app-feature-section-features-block {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1rem 0;
-  -webkit-flex: 1 0 33.33%;
-      -ms-flex: 1 0 33.33%;
-          flex: 1 0 33.33%;
-  font-size: 20px;
-  white-space: nowrap;
+.card-product-hover-icons a i {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  width: 2.5rem;
+  background-color: #fefefe;
+  text-align: center;
+  color: #0a0a0a;
 }
 
-.app-feature-section-features-block .fa {
-  margin-right: 1rem;
-  font-size: 35px;
+.card-product-hover-icons a i:hover {
+  background-color: #8a8a8a;
+  color: #fefefe;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 39.9375em) {
-  .app-feature-section-features-block {
-    -webkit-flex: 1 0 50%;
-        -ms-flex: 1 0 50%;
-            flex: 1 0 50%;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+.card-product-hover-icons a {
+  margin: 2px;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  transition: all 0.35s ease;
 }
 
-@media screen and (max-width: 25.9375em) {
-  .app-feature-section-features-block {
-    -webkit-flex: 1 0 100%;
-        -ms-flex: 1 0 100%;
-            flex: 1 0 100%;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+.card-product-hover:hover a,
+.card-product-hover.hover a {
+  transition: all 0.35s ease;
+  opacity: 1;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.card-product-hover:hover a:nth-child(2),
+.card-product-hover.hover a:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.card-product-hover:hover a:nth-child(3),
+.card-product-hover.hover a:nth-child(3) {
+  transition-delay: 0.2s;
 }
 
 
