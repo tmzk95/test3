@@ -1,9 +1,9 @@
 body{
     background-color: #eee;
-    color: #5ba;
+  color: #3aa;
 }
 .mobile-action-sheet {
-  background: #5ba;
+  background: #3aa;
   overflow: visible;
   width: 94%;
   left: 3%;
@@ -25,7 +25,7 @@ body{
   top: 0;
   font-size: 26px;
   color: #5ba;
-  display: none;
+  background: #3aa;
 }
 
 .mobile-action-sheet.is-open .close-button {
@@ -45,6 +45,7 @@ body{
       -ms-transform: translate3D(-50%, -100%, 0);
           transform: translate3D(-50%, -100%, 0);
   visibility: visible;
+  background: #3aa;
 }
 
 .mobile-action-sheet.position-bottom.is-transition-push::after {
@@ -74,7 +75,7 @@ body{
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  background: #5ba;
+  background: #333;
 }
 
 .mobile-app-icon-bar button {
@@ -88,7 +89,7 @@ body{
   font-size: 2rem;
   max-height: 2rem;
   max-width: 2rem;
-  color: white;
+  color: #eee;
 }
 
 
@@ -123,7 +124,7 @@ body{
 .card-product-hover-price {
   margin: 0.5rem 0;
   font-weight: 700;
-  color: #5ba;
+  color: #3aa;
   font-size: 1.6rem;
 }
 
